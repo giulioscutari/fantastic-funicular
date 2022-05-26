@@ -2,7 +2,7 @@ import socket, sys, json, youtube_dl, validators, urllib
 
 d = dict()
 ydl_opts = {
-    'outtmpl': './%(extractor_key)s/%(extractor)s-%(id)s-%(title)s.%(ext)s',
+    'outtmpl': './%(extractor)s-%(id)s-%(title)s.%(ext)s',
     'format': 'bestaudio/best',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
